@@ -1,0 +1,506 @@
+<div class="content" style="margin-top: 5rem;">
+
+<p>&nbsp;</p>
+
+<p>Great! Here's a <strong>comprehensive, in-depth article</strong> on <strong>System Design</strong>, including <strong>High-Level Design (HLD)</strong> and <strong>Low-Level Design (LLD)</strong> — ideal for interviews, real-world architecture, or leveling up your software engineering skills.</p>
+
+<hr>
+<h1>🔧 Ultimate Guide to System Design: HLD vs LLD</h1>
+
+<h2>📌 Introduction to System Design</h2>
+
+<p>System Design is the process of defining the <strong>architecture</strong>, <strong>modules</strong>, <strong>interfaces</strong>, <strong>data flow</strong>, and <strong>components</strong> for a system to satisfy specified requirements. It bridges the gap between <strong>problem statements</strong> and <strong>code implementation</strong>.</p>
+
+<p>System design is <strong>crucial</strong> for building scalable, maintainable, and performant software systems. Whether you're designing a small feature or an enterprise-scale application, you must consider both <strong>high-level</strong> and <strong>low-level</strong> aspects.</p>
+
+<hr>
+<h2>🏗️ 1. What is High-Level Design (HLD)?</h2>
+
+<h3>✅ Definition:</h3>
+
+<p>High-Level Design (HLD) represents the <strong>blueprint</strong> of the system. It focuses on <strong>architecture</strong>, <strong>external interfaces</strong>, and <strong>major modules</strong>. HLD is about <strong>what</strong> the system does and <strong>how components interact</strong> with each other — not their internal implementation.</p>
+
+<h3>🔍 Goals:</h3>
+
+<ul>
+	<li>
+	<p>Define the <strong>overall system architecture</strong></p>
+	</li>
+	<li>
+	<p>Identify major <strong>components/services/modules</strong></p>
+	</li>
+	<li>
+	<p>Choose <strong>technology stack</strong></p>
+	</li>
+	<li>
+	<p>Plan <strong>communication flow</strong> between modules</p>
+	</li>
+	<li>
+	<p>Ensure <strong>scalability</strong>, <strong>availability</strong>, and <strong>fault tolerance</strong></p>
+	</li>
+</ul>
+
+<h3>📐 Common Outputs:</h3>
+
+<ul>
+	<li>
+	<p>System Architecture Diagrams</p>
+	</li>
+	<li>
+	<p>Component Diagrams</p>
+	</li>
+	<li>
+	<p>Data Flow Diagrams (DFD)</p>
+	</li>
+	<li>
+	<p>Deployment Diagrams</p>
+	</li>
+	<li>
+	<p>Basic Database Design (Entity names only)</p>
+	</li>
+	<li>
+	<p>Tech Stack Choices</p>
+	</li>
+	<li>
+	<p>Load balancer, CDN, Cache usage overview</p>
+	</li>
+</ul>
+
+<h3>📦 Example (Instagram - HLD):</h3>
+
+<ul>
+	<li>
+	<p>Services: User Service, Feed Service, Media Service, Comment Service</p>
+	</li>
+	<li>
+	<p>Data Storage: PostgreSQL (users/posts), Redis (caching), Amazon S3 (images)</p>
+	</li>
+	<li>
+	<p>Communication: REST APIs, Kafka for event-based flow</p>
+	</li>
+	<li>
+	<p>External: CDN for fast media delivery</p>
+	</li>
+</ul>
+
+<h3>🧱 HLD Checklist:</h3>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Category</strong></th>
+			<th><strong>Example</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Architecture Style</td>
+			<td>Monolithic / Microservices / Serverless</td>
+		</tr>
+		<tr>
+			<td>Communication</td>
+			<td>REST / gRPC / WebSocket / Message Queue</td>
+		</tr>
+		<tr>
+			<td>Database</td>
+			<td>SQL / NoSQL / GraphDB</td>
+		</tr>
+		<tr>
+			<td>Caching</td>
+			<td>Redis / Memcached</td>
+		</tr>
+		<tr>
+			<td>File Storage</td>
+			<td>AWS S3 / Azure Blob / Local FS</td>
+		</tr>
+		<tr>
+			<td>Load Balancing</td>
+			<td>NGINX / ELB / HAProxy</td>
+		</tr>
+		<tr>
+			<td>Scalability</td>
+			<td>Horizontal vs Vertical</td>
+		</tr>
+		<tr>
+			<td>Fault Tolerance</td>
+			<td>Replication / Retry Logic / Circuit Breaker</td>
+		</tr>
+		<tr>
+			<td>Monitoring</td>
+			<td>Prometheus / Grafana / ELK</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h2>🔧 2. What is Low-Level Design (LLD)?</h2>
+
+<h3>✅ Definition:</h3>
+
+<p>Low-Level Design (LLD) focuses on the <strong>detailed internal implementation</strong> of individual modules/components. It answers <strong>how</strong> each module works, how data is processed, and how the components integrate at the code level.</p>
+
+<h3>🔍 Goals:</h3>
+
+<ul>
+	<li>
+	<p>Define <strong>classes</strong>, <strong>functions</strong>, and <strong>interfaces</strong></p>
+	</li>
+	<li>
+	<p>Create <strong>detailed ER diagrams</strong> and database schema</p>
+	</li>
+	<li>
+	<p>Design <strong>API endpoints</strong>, request/response formats</p>
+	</li>
+	<li>
+	<p>Choose appropriate <strong>design patterns</strong></p>
+	</li>
+	<li>
+	<p>Ensure <strong>code-level scalability</strong> and <strong>modularity</strong></p>
+	</li>
+</ul>
+
+<h3>📐 Common Outputs:</h3>
+
+<ul>
+	<li>
+	<p>Class Diagrams</p>
+	</li>
+	<li>
+	<p>ER Diagrams (with relations, indexes, constraints)</p>
+	</li>
+	<li>
+	<p>API Contracts with request/response formats</p>
+	</li>
+	<li>
+	<p>Sequence Diagrams</p>
+	</li>
+	<li>
+	<p>Flowcharts or Pseudocode</p>
+	</li>
+	<li>
+	<p>Folder/module structure</p>
+	</li>
+</ul>
+
+<h3>🧱 LLD Checklist:</h3>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Element</strong></th>
+			<th><strong>Details</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Classes</td>
+			<td><code>User</code>, <code>Post</code>, <code>Comment</code>, <code>Notification</code>, etc.</td>
+		</tr>
+		<tr>
+			<td>Functions</td>
+			<td><code>createPost()</code>, <code>getFeed()</code>, <code>uploadImage()</code>, etc.</td>
+		</tr>
+		<tr>
+			<td>DB Tables</td>
+			<td>Tables with columns, keys, constraints, indexes</td>
+		</tr>
+		<tr>
+			<td>API Design</td>
+			<td>REST/GraphQL with validation, authentication, throttling</td>
+		</tr>
+		<tr>
+			<td>Design Patterns</td>
+			<td>Singleton, Factory, Adapter, Strategy, Repository</td>
+		</tr>
+		<tr>
+			<td>Error Handling</td>
+			<td>Try-catch blocks, failover strategies</td>
+		</tr>
+		<tr>
+			<td>Testing</td>
+			<td>Unit tests, mocks, integration tests</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h2>🤖 HLD vs LLD - Key Differences</h2>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Feature</strong></th>
+			<th><strong>High-Level Design (HLD)</strong></th>
+			<th><strong>Low-Level Design (LLD)</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Scope</td>
+			<td>System-wide, overall architecture</td>
+			<td>Component/module-specific implementation</td>
+		</tr>
+		<tr>
+			<td>Focus</td>
+			<td><em>What</em> system does and <em>how it connects</em></td>
+			<td><em>How</em> each part works internally</td>
+		</tr>
+		<tr>
+			<td>Diagrams</td>
+			<td>Architecture, Deployment, DFD</td>
+			<td>Class, ER, Sequence, Flowcharts</td>
+		</tr>
+		<tr>
+			<td>Output</td>
+			<td>Components, protocols, tech stack</td>
+			<td>Classes, APIs, data schema, logic</td>
+		</tr>
+		<tr>
+			<td>Audience</td>
+			<td>Architects, senior devs, product team</td>
+			<td>Developers, QA, code reviewers</td>
+		</tr>
+		<tr>
+			<td>Example</td>
+			<td>"Use Kafka for feed updates"</td>
+			<td>"Write <code>enqueueFeedUpdate()</code> method in service"</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h2>🚀 Real-World Example – Designing a Scalable URL Shortener (Like Bitly)</h2>
+
+<h3>✅ High-Level Design:</h3>
+
+<ul>
+	<li>
+	<p>Services:</p>
+
+	<ul>
+		<li>
+		<p><strong>Frontend Service</strong>: UI to input long URL and display short one</p>
+		</li>
+		<li>
+		<p><strong>URL Service</strong>: Generates and stores shortened URLs</p>
+		</li>
+		<li>
+		<p><strong>Redirect Service</strong>: Maps short URL to original</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p>DB: Use <strong>NoSQL</strong> for speed (e.g., DynamoDB), or <strong>SQL</strong> with indexes</p>
+	</li>
+	<li>
+	<p>Cache: Redis to cache frequently accessed URLs</p>
+	</li>
+	<li>
+	<p>Load balancer and horizontal scaling</p>
+	</li>
+	<li>
+	<p>CDN for frontend files</p>
+	</li>
+	<li>
+	<p>Analytics service for tracking</p>
+	</li>
+</ul>
+
+<h3>✅ Low-Level Design:</h3>
+
+<ul>
+	<li>
+	<p>Class <code>ShortURL</code>: <code>id</code>, <code>original_url</code>, <code>short_code</code>, <code>created_at</code></p>
+	</li>
+	<li>
+	<p>API: <code>POST /shorten</code>, <code>GET /{short_code}</code></p>
+	</li>
+	<li>
+	<p>Logic: Base62 encoding for short codes</p>
+	</li>
+	<li>
+	<p>Table schema:</p>
+
+	<pre><code>CREATE TABLE urls (
+  id SERIAL PRIMARY KEY,
+  short_code VARCHAR(10) UNIQUE,
+  original_url TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT now()
+);
+</code></pre>
+	</li>
+          <li data-start="6160" data-end="6350">
+<p data-start="6162" data-end="6175">Table schema:</p>
+<pre class="overflow-visible!" data-start="6178" data-end="6350"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary" style="
+    background-color: #ffffff1f;
+    border-radius: 1rem;
+"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]" style="float: inline-start;">sql</div><div class="sticky top-9" style="
+    justify-self: end;
+"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="Copy" style="
+    background-color: initial;
+    color: white;
+    border: 0;
+    padding: .5rem !important;
+"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs" style="
+    margin-right: 4px;
+"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy</button><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none" style="
+    background-color: initial;
+    color: white;
+    border: 0;
+    padding: .5rem !important;
+"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs" style="
+    margin-right: 4px;
+"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Edit</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr" style="
+    background-color: #ffffff0f;
+    color: lightgray;
+"><code class="whitespace-pre! language-sql"><span><span><span class="hljs-keyword">CREATE</span></span><span> </span><span><span class="hljs-keyword">TABLE</span></span><span> urls (
+  id SERIAL </span><span><span class="hljs-keyword">PRIMARY</span></span><span> KEY,
+  short_code </span><span><span class="hljs-type">VARCHAR</span></span><span>(</span><span><span class="hljs-number">10</span></span><span>) </span><span><span class="hljs-keyword">UNIQUE</span></span><span>,
+  original_url TEXT </span><span><span class="hljs-keyword">NOT</span></span><span> </span><span><span class="hljs-keyword">NULL</span></span><span>,
+  created_at </span><span><span class="hljs-type">TIMESTAMP</span></span><span> </span><span><span class="hljs-keyword">DEFAULT</span></span><span> now()
+);
+</span></span></code></div></div></pre>
+</li>
+	<li>
+	<p>Retry logic for code collisions</p>
+	</li>
+	<li>
+	<p>Tests for invalid URLs</p>
+	</li>
+</ul>
+
+<hr>
+<h2>📈 Why Both HLD &amp; LLD Matter</h2>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Purpose</strong></th>
+			<th><strong>Importance</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Scalability</td>
+			<td>HLD helps you design systems that grow with users</td>
+		</tr>
+		<tr>
+			<td>Maintainability</td>
+			<td>LLD ensures clean, modular code that’s easy to debug</td>
+		</tr>
+		<tr>
+			<td>Team Collaboration</td>
+			<td>HLD gives clarity to architects; LLD guides developers</td>
+		</tr>
+		<tr>
+			<td>Interview Success</td>
+			<td>Most system design rounds test both HLD and LLD</td>
+		</tr>
+		<tr>
+			<td>Real-World Projects</td>
+			<td>Production systems require balance between both levels</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h2>🧠 Common Mistakes to Avoid</h2>
+
+<ol>
+	<li>
+	<p><strong>Skipping HLD</strong> – Jumping straight into code without planning architecture.</p>
+	</li>
+	<li>
+	<p><strong>Overengineering LLD</strong> – Too many classes/functions for simple tasks.</p>
+	</li>
+	<li>
+	<p><strong>Ignoring scalability/failure points</strong> in HLD.</p>
+	</li>
+	<li>
+	<p><strong>Not updating HLD after scaling decisions</strong> (e.g., caching added later).</p>
+	</li>
+	<li>
+	<p><strong>Hardcoding business logic in LLD</strong> – hurts modularity and testing.</p>
+	</li>
+</ol>
+
+<hr>
+<h2>🎯 Final Thoughts</h2>
+
+<ul>
+	<li>
+	<p><strong>System Design = Big Picture (HLD) + Small Picture (LLD)</strong></p>
+	</li>
+	<li>
+	<p>HLD ensures you're building the <strong>right</strong> system.</p>
+	</li>
+	<li>
+	<p>LLD ensures you're building the system <strong>right</strong>.</p>
+	</li>
+	<li>
+	<p>Both are essential for clean architecture, scalable systems, and strong technical communication.</p>
+	</li>
+</ul>
+
+<hr>
+<h2>✨ Bonus: HLD + LLD Template (Reusable)</h2>
+
+<h3>📘 HLD Template:</h3>
+
+<ul>
+	<li>
+	<p>Functional Requirements</p>
+	</li>
+	<li>
+	<p>Non-functional Requirements (latency, scalability)</p>
+	</li>
+	<li>
+	<p>Assumptions</p>
+	</li>
+	<li>
+	<p>System Architecture Diagram</p>
+	</li>
+	<li>
+	<p>Major Components</p>
+	</li>
+	<li>
+	<p>Database Choice + Data Flow</p>
+	</li>
+	<li>
+	<p>External Services (CDN, 3rd-party APIs)</p>
+	</li>
+	<li>
+	<p>Caching, Load Balancing, Queue Systems</p>
+	</li>
+</ul>
+
+<h3>📗 LLD Template:</h3>
+
+<ul>
+	<li>
+	<p>Module/Class Diagrams</p>
+	</li>
+	<li>
+	<p>API Endpoints (with request/response)</p>
+	</li>
+	<li>
+	<p>Detailed Database Schema</p>
+	</li>
+	<li>
+	<p>Internal Workflows (pseudocode/sequence diagram)</p>
+	</li>
+	<li>
+	<p>Design Patterns used</p>
+	</li>
+	<li>
+	<p>Error Handling, Testing Plan</p>
+	</li>
+</ul>
+
+<hr>
+
+<p>If you'd like to generate <strong>HLD + LLD documents or diagrams for any specific project</strong> (e.g., WhatsApp, Zomato, eCommerce, Netflix, LinkedIn), I can create them for you.</p>
+
+<p>Would you like to try with a real-world example now?</p>
+
+</div>

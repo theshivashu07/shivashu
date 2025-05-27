@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CKEditor  |  shivashu</title>
+</head>
+<body>
+
+          <!-- Include CKEditor CDN -->
+<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
+<!-- Textarea for CKEditor -->
+<form method="POST" action="/your-api-endpoint/" enctype="multipart/form-data">
+  {% csrf_token %}
+  
+  <label for="title">Job Title:</label>
+  <input type="text" name="title" required><br><br>
+
+  <label for="description">Job Description:</label>
+  <textarea name="description" id="editor" required></textarea>
+
+  <button type="submit">Post Job</button>
+</form>
+
+<!-- Activate CKEditor -->
+<script>
+  CKEDITOR.replace('editor');
+</script>
+
+          
+</body>
+</html>

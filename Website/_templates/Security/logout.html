@@ -1,0 +1,37 @@
+{% extends "_master.html" %}
+
+{% block title %}
+logout | frontend
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+{% include "_headers.html" %}
+
+<div class="container">
+    <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <div class="card">
+                    <div class="card-header">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                              {% csrf_token %}
+                              <div class="form-group">
+                                  Are you sure?
+                                  <a href="/logout/" class="btn btn-link">Logout</a>
+                              </div>
+                        </form>
+                    </div>
+              </div>
+          </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

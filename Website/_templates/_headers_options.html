@@ -1,0 +1,1327 @@
+<!-- <header class="navbar navbar-expand-lg navbar-sticky sticky-top px-0 prime-bg" data-sticky-element="" style="background-color: #f8f8f8;display: block;"> -->
+<header
+  class="navbar navbar-expand-lg navbar-sticky sticky-top px-0 prime-bg py-3"
+  data-sticky-element=""
+  style="background-color: #f8f8f8; display: block"
+>
+  <div class="container">
+    <!-- Mobile offcanvas menu toggler (Hamburger) -->
+    <button
+      type="button"
+      class="navbar-toggler me-3 me-lg-0"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-label="Toggle navigation"
+    >
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <!-- <i class="bi bi-list-ul"></i> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="45"
+        height="45"
+        fill="white"
+        class="bi bi-list-ul"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+        />
+      </svg>
+    </button>
+
+    <!-- Navbar brand (Logo) -->
+    <a
+      class="navbar-brand py-1 py-md-2 py-xl-1 me-sm-n4 me-md-n5 me-lg-0"
+      href="index.html"
+      style="font-family: 'Croissant One'; font-size: xx-large; color:white !important;" 
+    >
+      <!-- 
+                                                            <span class="d-none d-sm-flex flex-shrink-0 text-primary rtl-flip me-2">
+                                                            </span> 
+                                                      -->
+      shivashu.
+    </a>
+
+    <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+    <nav
+      class="offcanvas offcanvas-start"
+      id="navbarNav"
+      tabindex="-1"
+      aria-labelledby="navbarNavLabel"
+    >
+      <div class="offcanvas-body pt-2 pb-4 py-lg-0 mx-lg-auto">
+        <ul class="navbar-nav position-relative">
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/docs/">Docs</a>
+          </li>
+          <!-- 
+          <li class="nav-item dropdown position-static py-lg-2 me-lg-n1 me-xl-0">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/tutorials/"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              aria-expanded="false"
+              >Tutorials</a
+            >
+            <div class="dropdown-menu rounded-4 p-4">
+              <div class="d-flex flex-column flex-lg-row gap-4">
+                <div style="min-width: 190px">
+                  <div class="h6 mb-2 prime">Frontend Programming</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-real-estate.html"
+                        >HTML</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-real-estate.html"
+                        >CSS</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="h6 pt-4 mb-2 prime">Backend Programming</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-grid-cars.html"
+                        >C/C++</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-list-cars.html"
+                        >Java</a
+                      >
+                    </li>
+
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-cars.html"
+                        >Python</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-cars.html"
+                        >JavaScript</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-cars.html"
+                        >Typescript</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="h6 pt-4 mb-2 prime">Databases</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-contractors.html"
+                        >SQLite - SQL</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-contractors.html"
+                        >MySQL - SQL</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-contractors.html"
+                        >Postgress - SQL</a
+                      >
+                    </li>
+
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-contractors.html"
+                        >Oracle- SQL</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-contractors.html"
+                        >MongoDB - NoSQL</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-contractors.html"
+                        >Redis - In Memory</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div style="min-width: 190px">
+                  <div class="h6 mb-2 prime">Frontend Frameworks</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-side-filters-city-guide.html"
+                        >React.Js (Javascript)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="listings-top-filters-city-guide.html"
+                        >Angular.Js (Typescript)</a
+                      >
+                    </li>
+
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-city-guide.html"
+                        >Vue.Js (Javascript)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-city-guide.html"
+                        >Next.Js (Javascript)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-city-guide.html"
+                        >Bootstrap (HTML,CSS,JS)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-city-guide.html"
+                        >TailwindCSS (CSS)</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="h6 pt-4 mb-2 prime">Backend Framewworks</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-type.html"
+                        >Django (Python)
+                      </a>
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-location.html"
+                        >Flask (Python)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-photos.html"
+                      >
+                        FastAPI (Python)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-details.html"
+                        >Node.js (Typescript)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-price.html"
+                        >Express.js (Javascript)</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-details.html"
+                        >Nest.js (Typescript)</a
+                      >
+                    </li>
+
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-property-contact-info.html"
+                        >SpringBoot (Java)</a
+                      >
+                    </li>
+
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="single-entry-city-guide.html"
+                        >Ruby On Rails (Ruby)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div style="min-width: 190px">
+                  <div class="h6 mb-2 prime">Advanced Tech</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-contractor-location.html"
+                        >Git/GitHub</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-contractor-services.html"
+                        >Docker</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-contractor-profile.html"
+                        >Kubernates</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-contractor-price-hours.html"
+                        >GenAI</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-contractor-project.html"
+                        >Data Analyst</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="h6 pt-4 mb-2 prime">Cloud Plateforms</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >AWS - Amazon</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >GCP - Google</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >Azure - Microsoft</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="h6 pt-4 mb-2 prime">More Advanced</div>
+                  <ul class="nav flex-column gap-2 mt-0">
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >Data Structures</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >Algorithms</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >System Designs</a
+                      >
+                    </li>
+                    <li class="pt-1">
+                      <a
+                        class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                        href="add-car.html"
+                        >OOPs & SOLID</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> 
+          -->
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Tutorials</a>
+            <ul class="dropdown-menu">
+              
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Frontend Programming</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/frontend/html/">HTML</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/frontend/css/">CSS</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Backend Programming</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/c/">C</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/cpp/">C++</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/java/">Java</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/python/">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/javascript/">JavaScript</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/programming/backend/typescript/">Typescript</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Databases - SQL/NoSQL</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/sqlite/">SQLite - SQL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/mysql/">MySQL - SQL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/postgress/">Postgress - SQL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/oracle/">Oracle - SQL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/mongodb/">MongoDB - NoSQL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/databases/redis/">Redis - In Memory</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Frontend Frameworks</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/react.js/">React.Js (Javascript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/angular.js/">Angular.Js (Typescript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/vue.js/">Vue.Js (Javascript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/next.js/">Next.Js (Javascript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/bootstrap/">Bootstrap (HTML,CSS,JS)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/frontend/tailwindcss/">TailwindCSS (CSS)</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Backend Frameworks</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/django/">Django (Python)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/django-rest-framework/">Django Rest - DRF  (Python)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/flask/">Flask (Python)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/fastapi/">FastAPI (Python)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/node.js/">Node.js (Typescript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/express.js/">Express.js (Javascript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/nest.js/">Nest.js (Typescript)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/spring-boot/">SpringBoot (Java)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/frameworks/backend/ruby-on-rails/">Ruby On Rails (Ruby)</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Advanced Tech</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/github/">Git/GitHub</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/docker/">Docker</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/kubernates/">Kubernates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/genai/">GenAI</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/aiml/">AI & ML</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/advanced-tech/data-analyst/">Data Analyst</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Cloud Plateforms</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/cloud/aws/">AWS - Amazon</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/cloud/gcp/">GCP - Google</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/cloud/azure/">Azure - Microsoft</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">More Advanced Tech</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/more-advanced-tech/dsa/data-structures/">Data Structures</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/more-advanced-tech/dsa/algorithms/">Algorithms</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/more-advanced-tech/system-designs/">System Designs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/more-advanced-tech/oops-and-solid/">OOPs & SOLID</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials/more-advanced-tech/lld-and-hld/">LLD & HLD</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a class="dropdown-item" href="/explore-more/" style="color: gray !important">Explore more ...</a>
+                  </li> 
+                  -->
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              >Resume</a
+            >
+            <ul class="dropdown-menu">
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Experience</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime"
+                        >Full-Stack Web Developer</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Kangaroo Software PVT LTD | Full-Time
+                      </span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Indore, Madya Pradesh, India | Hybrid</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary">
+                        September 2022 – Present (2’years, 4’months)
+                      </span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime">Backend Web Developer</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Kangaroo Software PVT LTD | Full-Time
+                      </span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Indore, Madya Pradesh, India | Hybrid</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary">
+                        September 2021 – August 2022 (1’years)</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime"
+                        >Intern Full-Stack Web Developer</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Shiva Concept Solutions | Internship
+                      </span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Indore, Madya Pradesh, India | On site</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary">
+                        March 2021 – August 2021 (6’months)</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Certifications</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime"
+                        >Data Structure and Algorithm Master</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >CodeHelp | Love & Lakshya | 2021
+                      </span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/lets-shop/"
+                    >
+                      <span class="fw-medium prime"
+                        >Data Structure and Algorithm Self-Paced</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >GeeksForGeeks | Sandeep Jain | 2023
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Educations</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime"
+                        >Shri Ram Institute of Technology, Jabalpur</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >MCA | Aug 2019 - June 2021 Passout</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/lets-shop/"
+                    >
+                      <span class="fw-medium prime"
+                        >Tavite Computer & Software Institute, Katni</span
+                      >
+                      <span class="d-block fs-xs text-body-secondary"
+                        >BCA | July 2016 - May 2019 Passout</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Projects</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/open-assistant/"
+                    >
+                      <span class="fw-medium prime">Open Assistant</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Assistants Web Project</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/lets-shop/"
+                    >
+                      <span class="fw-medium prime">Lets Shop</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >E-Commerce Web Project</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/super-chat-room/"
+                    >
+                      <span class="fw-medium prime">Super Chat Room</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Chatting Web Project</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/project-crm/"
+                    >
+                      <span class="fw-medium prime">Project CRM</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >CRM/CMS Web Project</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/good-food/"
+                    >
+                      <span class="fw-medium prime">GoodFood</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Food Delivery Web Project</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a
+                      class="dropdown-item d-block mb-0"
+                      href="/resume/projects/"
+                    >
+                      <span class="fw-medium">Others !!! </span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Explore More Web Projects</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Technical Skills</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">Python</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Basic to Advanced, Numpy, Pandas</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">Django</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Django's DRF, ORM, REST APIs</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">Frontend</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >HTML, CSS, Bootstrap, TailwindCSS</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">JavaScript</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Advanced JavaScript with TypeScript</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">Databases</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >SQLite, MySQL</span
+                      >
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium prime">Advanced</span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Git, Docker, Kubernates, Postman API</span
+                      >
+                      <div
+                        class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                        style="
+                          width: 212px;
+                          height: calc(100% + 2px);
+                          margin-top: -1px;
+                        "
+                      >
+                        <img
+                          class="position-relative z-2 d-none-dark"
+                          src="https://geeksui.codescandy.com/geeks/assets/img/mega-menu/events-light.jpg"
+                          alt="Events Demo"
+                        />
+                        <img
+                          class="position-relative z-2 d-none d-block-dark"
+                          src="https://geeksui.codescandy.com/geeks/assets/img/mega-menu/events-dark.jpg"
+                          alt="Events Demo"
+                        />
+                        <span
+                          class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                          style="
+                            box-shadow: 0.875rem 0.5rem 2rem -0.5rem #676f7b;
+                            opacity: 0.1;
+                          "
+                        ></span>
+                        <span
+                          class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                          style="
+                            box-shadow: 0.875rem 0.5rem 1.875rem -0.5rem #080b12;
+                            opacity: 0.25;
+                          "
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="#">
+                      <span class="fw-medium">Others !!! </span>
+                      <span class="d-block fs-xs text-body-secondary"
+                        >Explore More Skills</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/courses/">Courses</a>
+          </li>
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/connect/">Connect</a>
+          </li>
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/asks/">Asks</a>
+            <!-- <a class="nav-link" href="/faqs/">FAQs</a> -->
+          </li>
+
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              >Explore</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="terms-and-conditions.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="terms-and-conditions.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Blog</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/geo-political-blogs/"
+                      >Geo Political blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/political-blogs/"
+                      >Political blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/youtube-blogs/"
+                      >Youtube blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/fitness-blogs/"
+                      >Fitness blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials-blogs/"
+                      >Tutorials blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/personalize-blogs/"
+                      >Personalize blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/entertainment-blogs/"
+                      >Entertainment blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/explore-more/"
+                      style="color: gray !important"
+                      >Explore more ...</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/geo-political-blogs/"
+                      >404 Error</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/political-blogs/"
+                      >Server Error</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/youtube-blogs/"
+                      >Under Maintenance</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="terms-and-conditions.html"
+                  >Help Center</a
+                >
+              </li>
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">404 Error</a></li> -->
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">Server Error</a></li> -->
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">Under Maintenance</a></li> -->
+              <li>
+                <a class="dropdown-item" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              >Backend Calls</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Index</a></li>
+              <li><a class="dropdown-item" href="/protected/">Protected</a></li>
+              <li><a class="dropdown-item" href="/login/">Login</a></li>
+              <li><a class="dropdown-item" href="/register/">Register</a></li>
+              <li><a class="dropdown-item" href="/logout/">Logout</a></li>
+              <li><a class="dropdown-item" href="/refresh-token/">Refresh</a></li>
+              <li><a class="dropdown-item" href="/google-login/">Google Login</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Button group -->
+    <div class="d-flex gap-3">
+      <!-- Theme switcher (light/dark/auto) -->
+      <div class="dropdown" style="align-content: center">
+        <button
+          type="button"
+          class="theme-switcher btn btn-icon btn-secondary bg-transparent fs-lg border-0 rounded-circle animate-scale"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          aria-label="Toggle theme (light)"
+        >
+          <span
+            class="theme-icon-active d-flex animate-target position-relative z-1"
+          >
+            <!-- <i class="fi-sun"></i> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-sun-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul
+          class="dropdown-menu start-50 translate-middle-x"
+          style="--fn-dropdown-min-width: 9rem; --fn-dropdown-spacer: 0.5rem"
+        >
+          <li>
+            <button
+              type="button"
+              class="dropdown-item active"
+              data-bs-theme-value="light"
+              aria-pressed="true"
+              style="display: flex; align-items: center"
+            >
+              <!-- <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false" style="display: flex; align-items: center;"> -->
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-sun"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-sun-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Light</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item"
+              data-bs-theme-value="dark"
+              aria-pressed="false"
+              style="display: flex; align-items: center"
+            >
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-moon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-moon-stars-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                  />
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Dark</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item"
+              data-bs-theme-value="auto"
+              aria-pressed="false"
+              style="display: flex; align-items: center"
+            >
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-auto"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-circle-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Auto</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- 
+      {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}!</p>
+        <a href="{% url 'logout_confirmations' %}">Logout</a>
+      {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'signup' %}">Signup</a>
+      {% endif %} 
+      -->
+
+      {% if user.is_authenticated %}
+      <!-- <a class="btn btn-primary btn-fame" href="/security/logout/confirmations/">LogOut</a> -->
+       {% include "header-after-login.html" %}
+      {% else %}
+      <a class="btn btn-primary btn-fame" href="/security/login/">LogIn</a>
+      <!-- <a class="btn btn-primary btn-fame" href="/security/signup/">SignUp</a> -->
+      <a class="btn btn-primary btn-fame" href="/security/register/">SignUp</a>
+      {% endif %}
+
+
+      <!-- <a class="btn btn-outline-light rounded" href="/login/">LogIn</a> -->
+
+      <!-- <a class="btn btn-outline-light rounded" href="/signup/">SignUp</a> -->
+
+      <!-- Buy button  -->
+      <!-- <a class="btn btn-primary animate-shake" href="#" target="_blank" rel="noreferrer">
+                                                        <i class="fa-solid fa-download"></i>
+                                                        Download Resume
+                                                      </a> -->
+    </div>
+  </div>
+
+  <style>
+    .nav-link {
+      color: #363636;
+    }
+    .nav-link:hover {
+      color: black;
+    }
+
+    .btn-check:focus + .btn-secondary,
+    .btn-secondary:focus {
+      color: #fff;
+      background-color: #5c636a;
+      border-color: #565e64;
+      box-shadow: none !important;
+    }
+
+    nav.offcanvas,
+    nav.offcanvas-start,
+    nav.show a {
+      color: black !important;
+    }
+
+    /* .navbar .dropdown .dropdown-toggle:after {
+    background-repeat: no-repeat !important;
+    background-size: .625rem .625rem !important;
+    border: none !important;
+    color: white !important;
+    content: "\e92e" !important;
+    float: right !important;
+    font-family: Feather !important;
+    font-size: 16px !important;
+    margin-left: .375rem !important;
+} */
+
+    .navbar .dropdown .dropdown-toggle:after {
+    /* color: white !important; */
+    color: currentColor;
+    /* content: "\e92e" !important; */
+    font-size: 16px !important;
+    /* margin-top: 7px !important; */
+}
+
+.dropdown-toggle::after {
+      box-sizing: border-box !important;
+    display: inline-block !important;
+    margin-left: .255em !important;
+    vertical-align: .255em !important;
+    content: "" !important;
+    /* content: "\e92e" !important; */
+    border-top: .3em solid !important;
+    border-right: .3em solid transparent !important;
+    border-bottom: 0 !important;
+    border-left: .3em solid transparent !important;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    /* content: "\e92e" !important; */
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+
+  </style>
+</header>

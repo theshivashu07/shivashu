@@ -1,0 +1,171 @@
+<div class="" style="
+    display: flex;
+">
+						<!-- <div style="display: flex;"> -->
+							
+
+							<div style="align-self: center;text-align: center;color: white;font-family: 'Philosopher', sans-serif;">
+								
+								<a href="/profile/" style="text-decoration: auto;color: #ffffff6f;font-size: .95rem;">
+									<h5 style="margin-bottom: -5px;font-weight: bold;font-size: 1.15rem; color: white; font-family: 'Philosopher', sans-serif;">
+										{% if user.first_name %}  
+											{{ user.first_name }}   {{ user.last_name }}  
+										{% elif username%}  
+											{{user.username}}
+										{% else %}  
+												{{user.email}}
+										{% endif %} 
+									</h5>
+									<spen style="background-color: #ffffff1f;border: 1px solid #ffffff1f;padding: 0 10px;border-radius: 5px;">
+										{% if user.profession %}  
+											{{ user.profession }} 
+										{% else %}  
+											Profession Not Set Yet !!! 
+										{% endif %} 
+										
+									</spen>
+								</a>	
+								
+							</div>
+
+
+
+							<div class="btn-group" role="group" style="background-color: #f0f0f0;padding: 4px;border-radius: 50px; /*margin-left: 5px;*/ ">
+								<button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 0; background-color: white; border: 0; border-radius: 50px;">
+									<!-- <img src="/_uploads/profile/shivashu.jpg" alt="img not found" width="40" height="40" style="font-size: 12px;border-radius: 50%;"> -->
+
+									{% if user.profile_picture %} 
+										<img src="{{ user.profile_picture.url }}" alt="default profile pic" width="40" height="40" style="font-size: 12px;border-radius: 50%;">
+									{% else %}  
+										<img src="{{ user.profile_picture_url }}" alt="default profile pic" width="40" height="40" style="font-size: 12px;border-radius: 50%;">
+									{% endif %}
+
+								</button>  
+								<ul class="dropdown-menu dropdown-menu-end mt-1" style="border-radius: 5px; border: 1px solid #bfbfbf; width: 300px; position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(-4px, 46px, 0px);" data-popper-placement="bottom-end">
+									<li class="row" style="margin: 0; height: 70px; align-content: center; align-items: center;">
+										<div class="col-md-3" style="">
+											
+											{% if user.profile_picture %} 
+												<img src="{{ user.profile_picture.url }}" alt="default profile pic" width="40" height="40" style="font-size: 12px;border-radius: 50%;">
+											{% else %}  
+												<img src="{{ user.profile_picture_url }}" alt="default profile pic" width="40" height="40" style="font-size: 12px;border-radius: 50%;">
+											{% endif %}
+										
+										</div>
+										<div class="col-md-9 py-1">
+											<h5 style="margin: 0; color: black; font-weight: bold;">
+												{% if user.is_authenticated %} 
+													{{ user.first_name }}   {{ user.last_name }}  
+												{% elif username%}  
+													{{user.username}}
+												{% else %}  
+														{{user.email}}
+												{% endif %} 
+											</h5>											
+											<h6 style=" margin: 2px 0 0 0;">
+												{% if user.profession %}  
+													{{ user.profession }} 
+												{% else %}  
+													Profession Not Set Yet !!! 
+												{% endif %} 												
+											</h6>
+										</div>
+									</li>
+									<hr class="my-1">
+									<li><a class="dropdown-item" href="/profile/">Profile</a></li>
+									<li><a class="dropdown-item" href="/security/profile-setup/">Setup Profile</a></li>
+									<li><a class="dropdown-item" href="/notifications/">Notifications</a></li>
+									<hr class="my-1">
+									<li><a class="dropdown-item" href="/security/users-list/">Users List</a></li>
+									<li><a class="dropdown-item" href="/security/default-user/">Default User</a></li>
+									<li><a class="dropdown-item" href="/security/asked-questions/">Most Asked FAQs</a></li>
+									<hr class="my-1">
+									<!-- <li><a class="dropdown-item" href="/security/logout/" style="color: red; font-weight: bold; background-color: #fff0f0;">Logout</a></li> -->
+									<li><a class="dropdown-item" href="/security/logout/confirmations/" style="color: red; font-weight: bold; background-color: #fff0f0;">Logout</a></li>
+								</ul>
+							</div>
+
+							
+<!-- 
+							<div class="position-relative" style="font-weight: bold;align-self: center;text-align: center;background-color: #f8f8f8;padding: 10px;border-radius: 15px;margin-left: 20px;">
+								<a href="/notifications/">
+									<i class="fa-regular fa-bell fa-xl" style="color: black;"></i>
+								</a>
+								<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+									77+ <span class="visually-hidden">unread messages</span>
+								</span>
+							</div> -->
+
+
+
+							<!-- <div class="position-relative" style="font-weight: bold;align-self: center;text-align: center;background-color: #f8f8f8;padding: 10px;border-radius: 15px;margin-left: 20px;">
+								<a href="/notifications/">
+									<i class="fa-regular fa-bell fa-xl" style="color: black;"></i>
+								</a>
+								<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+									77+ <span class="visually-hidden">unread messages</span>
+								</span>
+							</div> -->
+
+
+
+							<div class="position-relative" style="font-weight: bold;align-self: center;text-align: center;background-color: #f8f8f8;/* padding: 10px; */border-radius: 15px;margin-left: 20px;">
+								
+
+								<div class="nav-item dropdown position-static me-lg-n1 me-xl-0">
+						<a class="nav-link dropdown-toggle notifications " href="/notifications/" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false" style="
+					  padding: 12px 10px;
+				        ">
+    <i class="fa-regular fa-bell fa-xl" style="color: black;"></i>
+    
+</a>
+
+
+    
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+													        77+ <span class="visually-hidden">unread messages</span>
+												        </span>
+												        <div class="dropdown-menu rounded-4 p-4 dropdown-menu-end prime-bg" style="font-weight: normal; border: 5px solid white; color: white;">
+																			<div class="d-flex flex-column flex-lg-row gap-4">
+																			  <div style="min-width: 350px;">
+																			    
+																			    
+																			    
+																			    
+																			    
+																			    <div style="
+													  padding: 25px 15px;
+													  background-color: #ffffff24;
+													  border: 2px solid #ffffff1f;
+												        ">
+													  <h6 style="font-weight: bold;">Welcoming shivashu !!!</h6>
+													  <p style="margin: 0;">You are successfully login to your account.</p>
+
+												        </div>
+												        <hr>
+																			  </div>
+																			</div>
+																		        </div>
+					        </div>
+												        
+											        </div>
+
+
+											        <!-- <div class="dropdown">
+												<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+												    Click Me
+												</button>
+												<ul class="dropdown-menu dropdown-menu-end">
+												    <li><a class="dropdown-item" href="#">Option 1</a></li>
+												    <li><a class="dropdown-item" href="#">Option 2</a></li>
+												    <li><a class="dropdown-item" href="#">Option 3</a></li>
+												</ul>
+											      </div> -->
+
+
+							<style>
+								.notifications.dropdown-toggle::after {
+									content: none !important;
+									}
+							</style>
+					</div>

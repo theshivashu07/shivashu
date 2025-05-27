@@ -1,0 +1,55 @@
+{% extends "_master.html" %}
+
+{% block title %}
+Under Maintenance
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+                        
+          {% include "_headers.html" %}
+
+          <main>
+
+          {% include "scrollbar.html" %}
+          
+          {% include "_header_path.html" %}
+
+          
+                                        <!-- <div class="my-5" style="background-color: black; color: #d4d4d4;"> -->
+                                            <div class="prime" style="background-color: black; color: white;">
+                                                <div class="text-center bg-body-tertiary" style="padding: 8rem 2rem;">
+                                                  <div class="container py-5">
+                                                    <h1 class="text-body-emphasis" style="font-size: 115px; font-weight: bold; font-family: 'Philosopher', sans-serif;">Under Maintenance</h1>
+                                                    <h3 class="text-body-emphasis" style="font-family: 'Castoro';">  http://localhost:1234{{request.path}} </h3>
+                                                    <!-- <h3 class="text-body-emphasis" style="color: darkgray;">Full-Stack web developer  |  Python Django React Developer  |  Software Development Engineer</h3> -->
+    
+                                                  </div>
+                                                </div>
+                                                <style>
+                                                          strong{
+                                                                    font-weight: bold;
+                                                                    text-decoration: underline 1px #2f2f2f;
+                                                                    text-underline-position: under;
+                                                          }
+                                                          strong:hover{
+                                                                    text-decoration: underline 1px #8d8d8d;
+                                                                    color: white;
+                                                          }
+                                                </style>
+                                            </div>
+    
+
+
+          </main>
+
+
+          {% include "_footers.html" %}
+                                            
+{% endblock %}
+
+{% block script %}
+{% endblock %}

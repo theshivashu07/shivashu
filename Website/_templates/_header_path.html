@@ -1,0 +1,43 @@
+<div style="background-color: white;">
+  <div class="container p-0"style="border-bottom: 1px solid #0000000f; /*border-bottom: 1px solid #4d91ff;*/">
+
+
+    <nav aria-label="breadcrumb">
+
+      <!-- <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3 m-0"> -->
+      <ol class="breadcrumb breadcrumb-chevron p-2 bg-body-tertiary rounded-3 m-0" style="background-color: white;">
+            
+        <li class="breadcrumb-item">
+          <a class="link-body-emphasis" href="/">
+            <i class="fa-solid fa-house"></i>
+            <span class="visually-hidden">Home</span>
+          </a>
+        </li>
+        
+        <!-- {{paths}} -->
+
+        {% for path in paths %}
+
+          {% if path.activate %}
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis fw-semibold text-decoration-none" href="{{ path.url }}">{{ path.name }}</a>
+            </li>
+          {% else %}
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="fw-semibold">{{ path.name }}</span>
+            </li>
+          {% endif %}
+
+        {% endfor %}
+
+      </ol>
+
+    </nav>
+
+
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,199 @@
+{% extends "_master.html" %}
+
+{% block title %}
+Notifications
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+                        
+          {% include "_headers.html" %}
+
+          <main>
+
+          {% include "scrollbar.html" %}
+          
+          {% include "_header_path.html" %}
+
+          
+            <div class="container" style="padding: 100px;">
+
+
+
+            <!-- 
+              <div class="bd-example">
+                <div class="alert alert-success" role="alert" style="color: white; background-color: #0077074f; border-width: 0px; padding: 50px;">
+                  <h4 class="alert-heading">Well done!</h4>
+                  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                  <hr style="color: darkgreen;">
+                  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                </div>
+            -->
+
+            <!-- <div class="message-divider"><span>New Messages</span></div> -->
+            <div class="custom-divider"><span>*  New Messages</span></div>
+
+
+
+              <div class="bd-example">
+                <div class="alert alert-sample" role="alert">
+                  <h4 class="alert-heading">Great, Your Account Created !</h4>
+                  <p>Aww yeah, you have successfully sign-in. (Successful Sign In Notification)</p>
+                  <hr>
+                  <p class="mb-0">You can freely explore our website now !</p>
+                </div>
+              </div>
+
+              <div class="bd-example">
+                <div class="alert alert-success" role="alert">
+                  <h4 class="alert-heading">Great, Your Account Created !</h4>
+                  <p>Aww yeah, you have successfully sign-in. (Successful Sign In Notification)</p>
+                  <hr>
+                  <p class="mb-0">You can freely explore our website now !</p>
+                </div>
+              </div>
+
+              <div class="bd-example">
+                <div class="alert alert-success" role="alert">
+                  <h4 class="alert-heading">Welcome back!</h4>
+                  <p>Aww yeah, you are now logged in successfully. (Successful Login Notification)</p>
+                  <hr>
+                  <p class="mb-0">Your last login was 3 month old, at 02-02-2025.</p>
+                </div>
+              </div>
+
+              
+
+            <!-- <div class="message-divider"><span>New Messages</span></div> -->
+            <div class="custom-divider" style="margin-top: 8rem;"><span>Older Messages</span></div>
+
+
+
+              <div class="bd-example">
+                <div class="alert alert-warning" role="alert">
+                  <h4 class="alert-heading">Session Expired!</h4>
+                  <p>Please log in again to continue. (Successful Re-login Notification)</p>
+                  <hr>
+                  <p class="mb-0">Your this login was 3 month old, at 02-02-2025. so required to you refresh you token again to stay login ! </p>
+                </div>
+              </div>
+
+              <div class="bd-example">
+                <div class="alert alert-info alert-dismissible " role="alert">
+                  <h4 class="alert-heading">Password Updated!</h4>
+                  <p>Your password was successfully changed. (Password Change Notification)</p>
+                  <hr>
+                  <p class="mb-0">Your this password was 3 month old, at 02-02-2025. so up-o-date you password also ! </p>
+                </div>
+              </div>
+
+              <div class="bd-example">
+                <div class="alert alert-danger alert-dismissible " role="alert">
+                  <h4 class="alert-heading">Account Deactivated!</h4>
+                  <p>Your account has been deactivated. (Account Deactivation Notification)</p>
+                  <hr>
+                  <p class="mb-0">Your this account was created at 3 month old, at 02-02-2025. And as per your request, we deactivated this account !!! </p>
+                </div>
+              </div>
+
+              <div class="bd-example">
+                <div class="alert alert-success" role="alert">
+                  <h4 class="alert-heading">Subscription Renewed!</h4>
+                  <p>Your subscription has been renewed. (Subscription Renewal Notification)</p>
+                  <hr>
+                  <p class="mb-0">Well done! Your accounts subscription has been renewed now.</p>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <style>
+
+              .alert{
+                border-radius: 10px;
+                padding: 50px;
+                padding: 40px 80px;
+                border-width: 0px; 
+                /* color: inherit !important; */
+                /* border-color: inherit; */
+
+                
+                color: dimgray !important;
+                background-color: #ffffff0f !important;
+              }
+
+              .alert-success{
+                color: #bbffbb; 
+                background-color: #0077074f; 
+              }
+
+              .alert-warning{
+                color: #ffebab;
+                background-color: #ffc2004f;
+              }
+
+              .alert-info{    color: #ccf6ff;
+                background-color: #00d2ff4a;
+              }
+
+              .alert-danger{
+                color: #ffe2e2;
+                background-color: #ff000030;
+              }
+
+              .alert-sample{
+                color: lightgray;
+                color: dimgray;
+                background-color: #ffffff0f;
+              }
+
+              hr{
+                /* color: darkgrey; */
+                color: darkslategray;
+              }
+            </style>
+
+
+<style>
+.custom-divider {
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid #555; /* light gray line for black bg */
+  border-top: 5px solid #111111;
+  position: relative;
+}
+
+.custom-divider span {
+  font-size: 1.5rem; /* h4 size ~ 24px */
+  font-weight: bold;
+  color: #fff; /* light text for black background */
+  background-color: #000; /* match your background */
+  padding: 0 1rem;
+  position: relative;
+    top: -1rem;
+    font-family: 'Croissant One';
+}
+</style>
+
+
+          </main>
+
+
+          {% include "_footers.html" %}
+                                            
+{% endblock %}
+
+{% block script %}
+{% endblock %}

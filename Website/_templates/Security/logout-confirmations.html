@@ -1,0 +1,61 @@
+{% extends "_master.html" %}
+
+{% block title %}
+logout confirmations  |  shivashu
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+                        
+          {% include "_headers.html" %}
+
+          <main>
+
+          {% include "scrollbar.html" %}
+          
+          {% include "_header_path.html" %}
+
+          
+                                        <!-- <div class="my-5" style="background-color: black; color: #d4d4d4;"> -->
+                                            <div class="py-5" style="background-color: black; color: white;">
+                                                <div class="text-center bg-body-tertiary" style="padding: 2rem;">
+                                                  <div class="container py-5" style="background-color: #ffffff1f; border-radius: 10px; /*border: 1px solid #ffffff1f;*/">
+                                                    
+                                                    
+                                                    <div class="row" style="justify-content: center;">
+					
+                                                        <!-- <div class="col-sm-6" style="text-align: center;"> -->
+                                                        <div class="col-sm-6 py-5" style="">
+
+                                                            <form method="POST" action="{% url 'logout_confirmations' %}" class="form-signin">
+                                                                <h1 class="h3 mb-3 font-weight-normal">Are you sure you want to logout?</h1>
+                                                                <p>Click the button below to logout.</p>
+                                                                <button class="btn btn-lg btn-danger btn-block" type="submit">Logout</button>
+                                                                {% csrf_token %}
+
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- <p>Don't have an account? <a href="{% url 'register' %}">Sign up</a></p> -->
+                                                    <!-- <p>Forgot your password? <a href="{% url 'reset_password' %}">Reset password</a></p> -->
+                                                    
+                                                  </div>
+                                                </div>
+                                            </div>
+    
+
+
+          </main>
+
+
+          {% include "_footers.html" %}
+                                            
+{% endblock %}
+
+{% block script %}
+{% endblock %}

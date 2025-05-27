@@ -1,0 +1,58 @@
+{% extends "_master.html" %}
+
+{% block title %}
+Home of SHivam Kumar SHukla
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+                        
+          {% include "_headers.html" %}
+
+          <main>
+
+          {% include "scrollbar.html" %}
+          
+          {% include "_header_path.html" %}
+
+          
+                                        <!-- <div class="my-5" style="background-color: black; color: #d4d4d4;"> -->
+                                            <div class="" style="background-color: black; color: white;">
+                                                <div class="text-center bg-body-tertiary" style="padding: 8rem 2rem;">
+                                                  <div class="container py-5">
+                                                    <h1 class="text-body-emphasis" style="font-size: 115px; font-weight: bold; font-family: 'Philosopher', sans-serif;">SHivam Kumar SHukla</h1>
+                                                    <h3 class="text-body-emphasis" style="font-family: 'Castoro';">Full-Stack Web Developer  |  3+ Years Experience  |  Kangaroo Software PVT LTD  |  Indore, MP, India. </h3>
+                                                    <h4 class="text-body-emphasis" style="font-family: 'Castoro'; color: azure;">Python, Django, React, JS/TS, MySQL, MongoDB, Git, Docker, Kubernates, Postman, AWS(EC2), SOLID, DSA & Designs</h4>
+                                                    {% if user.is_authenticated %}
+                                                    <h4 class="text-body-emphasis" style="font-family: 'Castoro'; color: azure;"> Email : {{user.email}}  |  Username : {{user.username}}</h4>
+                                                    <!-- <h3 class="text-body-emphasis" style="color: darkgray;">Full-Stack web developer  |  Python Django React Developer  |  Software Development Engineer</h3> -->
+                                                    {% endif %}
+                                                  </div>
+                                                </div>
+                                                <style>
+                                                          strong{
+                                                                    font-weight: bold;
+                                                                    text-decoration: underline 1px #2f2f2f;
+                                                                    text-underline-position: under;
+                                                          }
+                                                          strong:hover{
+                                                                    text-decoration: underline 1px #8d8d8d;
+                                                                    color: white;
+                                                          }
+                                                </style>
+                                            </div>
+    
+
+
+          </main>
+
+
+          {% include "_footers.html" %}
+                                            
+{% endblock %}
+
+{% block script %}
+{% endblock %}

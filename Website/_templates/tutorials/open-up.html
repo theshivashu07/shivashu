@@ -1,0 +1,511 @@
+{% extends "_master.html" %}
+
+{% block title %}
+Libraries - Python | Tutorials
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<div class="col-lg-9 mx-auto p-4 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom" style="display: flex;flex-wrap: inherit;align-items: center;justify-content: space-between;border-bottom: 0 !important;"> 
+    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+      <h2 class="m-0 prime" style="font-family: 'Croissant One';">
+      <!-- <i class="fa-solid fa-bars-progress prime fa-2x me-2"></i> -->
+      <i class="fa-solid fa-chalkboard me-2 mb-2"></i>
+        shivashu
+      </h2> </a> 
+      <h5 class="icon-link prime-bg p-1 px-4" style="border-radius: 5rem;">tutorials@app</h5>  
+    </header>
+  <main>
+
+
+
+
+<div class="head-of-article" style="
+    background-color: #ffffff1f;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: .2rem solid #ffffff0f;
+    /* border-bottom: .5rem solid #ffffff0f; */
+    margin-bottom: 5rem;
+">
+        <h5 style="
+    color: dimgray;
+">
+	<spen> Functions and Recursion </spen>
+	<spen> &gt; </spen>
+	<spen> Recursion </spen>
+	<spen> &gt; </spen>
+	<spen> Examples </spen>
+</h5>
+<hr style="
+    color: gray;
+">
+    
+    
+
+    <div class="head d-flex">
+                                                                                <div>
+                                                                                          
+                                                                                          <h1 class="text-body-emphasis">Python Libraries</h1>
+
+                                                                                          <h6 style="
+    color: cornflowerblue;
+">
+	<spen> SHivam SHukla </spen>
+	<spen> • </spen>
+	<spen> June 8, 2024 </spen>
+	<spen> • </spen>
+          <spen> Saturday </spen>
+	<spen> • </spen>
+	<spen> Updated 1 day ago </spen>
+    </h6>
+                                                                                </div>
+                                                                                
+                                                                                <div class="d-flex ms-auto">          
+                                                                                          <!-- <a id="myLink2" onclick="document.getElementById('cke_90').click()" class="btn btn-light" style="align-content: center;/*align-self: center;*/margin-right: 5px; color: blue;" 
+                                                                                                    href="/learnings/programming-languages/python/functions-and-recursion/recursion/examples/?task=update">
+                                                                                                    <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                                                                          </a>        -->
+                                                                                          <a target="_blank" id="myLink2" onclick="document.getElementById('cke_90').click()" class="btn btn-light" style="align-content: center;margin-right: 5px;color: blue;background-color: #ffffff1f;border-color: #ffffff0f;" href="http://localhost:1234/admin/theLearnings/topic/188/change/">
+                                                                                                    <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                                                                          </a>
+                                                                                          <a target="_blank" id="myLink2" onclick="document.getElementById('cke_90').click()" class="btn btn-light" style="align-content: center;margin-right: 5px;color: red;background-color: #ffffff1f;border-color: #ffffff0f;" href="http://localhost:1234/admin/theLearnings/topic/188/delete/">
+                                                                                                    <i class="fa-solid fa-trash fa-lg"></i>
+                                                                                          </a>
+                                                                                </div>
+
+                                                                      </div>
+
+
+    </div>
+
+
+
+    <!-- <hr> -->
+
+
+    <div class="content" style="margin-top: 5rem;">
+
+                                                            <p>&nbsp;</p>
+
+<p>Here’s a <strong>grouped and updated list</strong> of the <strong>Top Python Libraries</strong>, categorized by purpose, and includes some additional <strong>famous ones</strong> often used in real-world projects.</p>
+
+<hr>
+<h3>🧠 1. <strong>Data Science &amp; Machine Learning</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>NumPy</strong> – Numerical computations and array operations</p>
+	</li>
+	<li>
+	<p><strong>Pandas</strong> – Data manipulation and analysis</p>
+	</li>
+	<li>
+	<p><strong>Scikit-learn</strong> – Classical machine learning models and utilities</p>
+	</li>
+	<li>
+	<p><strong>TensorFlow</strong> – Deep learning framework by Google</p>
+	</li>
+	<li>
+	<p><strong>PyTorch</strong> – Deep learning framework by Meta (very popular!)</p>
+	</li>
+	<li>
+	<p><strong>Keras</strong> – High-level API for building neural networks (often used with TensorFlow)</p>
+	</li>
+	<li>
+	<p><strong>XGBoost</strong> – Gradient boosting for structured data (used in Kaggle competitions)</p>
+	</li>
+	<li>
+	<p><strong>LightGBM</strong> – Fast gradient boosting library by Microsoft</p>
+	</li>
+	<li>
+	<p><strong>CatBoost</strong> – Boosting library by Yandex (handles categorical data well)</p>
+	</li>
+	<li>
+	<p><strong>Theano</strong> <em>(legacy)</em> – Older deep learning library</p>
+	</li>
+</ul>
+
+<hr>
+<h3>📊 2. <strong>Data Visualization</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>Matplotlib</strong> – Basic 2D plotting</p>
+	</li>
+	<li>
+	<p><strong>Seaborn</strong> – Statistical plots (built on Matplotlib)</p>
+	</li>
+	<li>
+	<p><strong>Plotly</strong> – Interactive, web-based plots</p>
+	</li>
+	<li>
+	<p><strong>Bokeh</strong> – Interactive visualizations for the web</p>
+	</li>
+	<li>
+	<p><strong>Altair</strong> – Declarative statistical visualization</p>
+	</li>
+	<li>
+	<p><strong>Dash</strong> – Web app framework for dashboards (built on Plotly)</p>
+	</li>
+</ul>
+
+<hr>
+<h3>🌐 3. <strong>Web Scraping &amp; Networking</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>Requests</strong> – Simplified HTTP requests</p>
+	</li>
+	<li>
+	<p><strong>Beautiful Soup</strong> – Parsing HTML/XML</p>
+	</li>
+	<li>
+	<p><strong>Scrapy</strong> – Powerful web scraping framework</p>
+	</li>
+	<li>
+	<p><strong>httpx</strong> – HTTP client with async support</p>
+	</li>
+</ul>
+
+<hr>
+<h3>💬 4. <strong>Natural Language Processing (NLP)</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>NLTK</strong> – Foundational NLP tools</p>
+	</li>
+	<li>
+	<p><strong>spaCy</strong> – Fast, production-level NLP</p>
+	</li>
+	<li>
+	<p><strong>Gensim</strong> – Topic modeling &amp; word vectors (Word2Vec, LDA)</p>
+	</li>
+	<li>
+	<p><strong>Transformers</strong> <em>(by Hugging Face)</em> – State-of-the-art language models (BERT, GPT, etc.)</p>
+	</li>
+</ul>
+
+<hr>
+<h3>🎮 5. <strong>Game Development</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>Pygame</strong> – Game development and multimedia</p>
+	</li>
+</ul>
+
+<hr>
+<h3>🧪 6. <strong>Scientific Computing</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>SciPy</strong> – Scientific computation (builds on NumPy)</p>
+	</li>
+	<li>
+	<p><strong>SymPy</strong> – Symbolic mathematics</p>
+	</li>
+	<li>
+	<p><strong>OpenCV</strong> – Computer vision/image processing</p>
+	</li>
+	<li>
+	<p><strong>Hebel</strong> <em>(less popular now)</em> – Neural networks (legacy)</p>
+	</li>
+</ul>
+
+<hr>
+<h3>🛠️ 7. <strong>Utilities &amp; Frameworks</strong></h3>
+
+<ul>
+	<li>
+	<p><strong>Flask</strong> – Lightweight web framework</p>
+	</li>
+	<li>
+	<p><strong>Django</strong> – Full-featured web framework</p>
+	</li>
+	<li>
+	<p><strong>FastAPI</strong> – Fast web APIs with async support</p>
+	</li>
+	<li>
+	<p><strong>Typer</strong> – CLI app building with minimal code</p>
+	</li>
+	<li>
+	<p><strong>Pytest</strong> – Testing framework</p>
+	</li>
+	<li>
+	<p><strong>Pydantic</strong> – Data validation using Python type hints</p>
+	</li>
+	<li>
+	<p><strong>SQLAlchemy</strong> – SQL toolkit and ORM</p>
+	</li>
+</ul>
+
+<hr>
+<h3>🧠 Want a top-10 shortlist?</h3>
+
+<p>Here’s a <strong>Top 10 Must-Know Python Libraries</strong> for real-world work:</p>
+
+<ol>
+	<li>
+	<p><strong>NumPy</strong></p>
+	</li>
+	<li>
+	<p><strong>Pandas</strong></p>
+	</li>
+	<li>
+	<p><strong>Matplotlib</strong></p>
+	</li>
+	<li>
+	<p><strong>Seaborn</strong></p>
+	</li>
+	<li>
+	<p><strong>Scikit-learn</strong></p>
+	</li>
+	<li>
+	<p><strong>TensorFlow</strong> or <strong>PyTorch</strong></p>
+	</li>
+	<li>
+	<p><strong>Requests</strong></p>
+	</li>
+	<li>
+	<p><strong>Beautiful Soup</strong></p>
+	</li>
+	<li>
+	<p><strong>Flask</strong> or <strong>Django</strong></p>
+	</li>
+	<li>
+	<p><strong>FastAPI</strong></p>
+	</li>
+</ol>
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+
+<hr>
+
+<h3>🗂️ Top Python Libraries (Grouped)</h3>
+
+<!-- <table class="table table-dark table-striped table-hover table-bordered"> -->
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Category</strong></th>
+			<th><strong>Libraries</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Data Science &amp; Machine Learning</strong></td>
+			<td>NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Keras, XGBoost, LightGBM, CatBoost, Theano</td>
+		</tr>
+		<tr>
+			<td><strong>Data Visualization</strong></td>
+			<td>Matplotlib, Seaborn, Plotly, Bokeh, Altair, Dash</td>
+		</tr>
+		<tr>
+			<td><strong>Web Scraping &amp; Networking</strong></td>
+			<td>Requests, Beautiful Soup, Scrapy, httpx</td>
+		</tr>
+		<tr>
+			<td><strong>Natural Language Processing</strong></td>
+			<td>NLTK, spaCy, Gensim, Transformers (by Hugging Face)</td>
+		</tr>
+		<tr>
+			<td><strong>Game Development</strong></td>
+			<td>Pygame</td>
+		</tr>
+		<tr>
+			<td><strong>Scientific Computing</strong></td>
+			<td>SciPy, SymPy, OpenCV, Hebel</td>
+		</tr>
+		<tr>
+			<td><strong>Utilities &amp; Frameworks</strong></td>
+			<td>Flask, Django, FastAPI, Typer, Pytest, Pydantic, SQLAlchemy</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h3>✅ Bonus: Top 10 Must-Know Libraries (for real-world projects)</h3>
+
+
+
+<!-- <table class="table table-dark table-striped table-hover table-bordered"> -->
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th><strong>Rank</strong></th>
+			<th><strong>Library</strong></th>
+			<th><strong>Purpose</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>NumPy</td>
+			<td>Numerical computing</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Pandas</td>
+			<td>Data manipulation</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Matplotlib</td>
+			<td>Basic data visualization</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Seaborn</td>
+			<td>Statistical visualization</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Scikit-learn</td>
+			<td>Machine learning</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>TensorFlow</td>
+			<td>Deep learning</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Requests</td>
+			<td>HTTP requests</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Beautiful Soup</td>
+			<td>Web scraping</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Django / Flask</td>
+			<td>Web development</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>FastAPI</td>
+			<td>Async API development</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<p>Would you like this rendered in <strong>Bootstrap table style</strong> for a webpage or as a downloadable HTML file?</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+
+                                                            </div>
+
+</main>
+  <footer class="pt-5 my-5 text-body-secondary border-top">
+    Created by the Bootstrap team · © 2025 </footer>
+</div>
+
+
+
+
+<style>
+
+  .content h3{
+    margin-bottom: 1rem;
+  }
+
+  .content hr{
+    margin: 2rem 0;
+    color: dimgray;
+    height: .1px;
+  }
+
+  .content strong{
+    font-weight: bold;
+    text-decoration: underline 1px cornflowerblue;
+    text-underline-position: under;
+    color: cornflowerblue;
+    /* background-color: #008bff1f; */
+    /* padding: 5px 10px; */
+    /* border-radius: 5px; */
+  }
+
+  .content li p{
+    margin-bottom: .5rem;
+  }
+  
+  .content li::marker{
+    color: cornflowerblue;
+  }
+
+</style>
+
+
+
+<style>
+	/* table */
+
+	/* change table font color && table's heads lines color */
+	.table>:not(:first-child) {
+		border-top: 2px solid cornflowerblue;
+		color: white;
+	}
+
+	/* change color of table's between lines */
+	tbody, td, tfoot, th, thead, tr{
+		border-color: #1f1f1f;
+		border-style: solid;
+		border-width: 0;
+	}
+
+	/* change if we hover on table's row */
+	.table-hover>tbody>tr:hover>* {
+		--bs-table-accent-bg: inharit;
+		/* color: cornflowerblue; */
+		/* --bs-table-accent-bg: #ffffff0a; */
+		color: white;
+		/* font-weight: bold; */
+		text-decoration: underline;
+		text-underline-position: under;
+	}
+</style>
+
+
+<style>
+	.head-of-article{
+		background-color: #ffffff1f;
+		border-radius: 1rem;
+		padding: 2rem;
+		border: .2rem solid #ffffff0f;
+		/* border-bottom: .5rem solid #ffffff0f; */
+		margin-bottom: 5rem;
+	}
+</style>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}

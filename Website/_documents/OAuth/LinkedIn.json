@@ -1,0 +1,39 @@
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    
+
+    // # If you use linkedin Product : "Sign In with LinkedIn" / "Sign In with LinkedIn using OAuth 2.0"
+
+    'linkedin_oauth2': {
+        'SCOPE': [
+            'r_liteprofile',
+            'r_emailaddress',
+        ],
+        'PROFILE_FIELDS': [
+            'id',
+            'first-name',
+            'last-name',
+            'email-address',
+            'picture-url',
+        ],  
+    },
+    
+    // # If you use linkedin Product : 'Sign In with LinkedIn using OpenID Connect'
+    'linkedin_oauth2': {
+        'SCOPE': [
+            'openid',
+            'profile',
+            'email',
+        ],
+        'PROFILE_FIELDS': [
+            'id',
+            'firstName',
+            'lastName',
+            # 'profilePicture',
+            'emailAddress',
+        ],
+    },
+
+    
+}

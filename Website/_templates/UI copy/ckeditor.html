@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CKEditor  |  shivashu</title>
+
+
+
+
+
+
+          <!-- // CKEDITOR ////////////////////////////////////////////////////////////// -->
+
+          <style>
+            /* very important, because of ckeditor give warnings and i want to hide it immidiate !!! */
+            .cke_notification_warning {
+              display: none !important;
+            }
+          </style>
+
+          <!-- Include CKEditor CDN -->
+          <!-- <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script> -->
+          <!-- Include CKEditor Full Build from CDN -->
+          <!-- <script src="https://cdn.ckeditor.com/4.25.1-lts/full-all/ckeditor.js"></script> -->
+
+          <!-- This was the its last version which is atleast working, with error I know, but at least its working !!! -->
+          <script src="https://cdn.ckeditor.com/4.22.0/full-all/ckeditor.js"></script>
+
+          <script>
+            CKEDITOR.on('instanceReady', function(evt) {
+              // Wait a bit to let warning div render, then remove it
+              setTimeout(function () {
+                const warningDiv = document.querySelector('.cke_notification_warning');
+                if (warningDiv) warningDiv.remove();
+              }, 100); // short delay for DOM to render
+            });
+          </script>
+
+
+          <!-- //////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+<!-- Textarea for CKEditor -->
+<form method="POST" action="/ckeditor/" enctype="multipart/form-data">
+  {% csrf_token %}
+  
+  <label for="title">Job Title:</label>
+  <input type="text" name="title" required><br><br>
+
+  <label for="description">Job Description:</label>
+  <textarea name="description" id="editor" required></textarea>
+  <!-- <textarea name="description" id="editor"></textarea> -->
+
+  <button type="submit">Post Job</button>
+</form>
+
+<!-- Activate CKEditor -->
+<script>
+  CKEDITOR.replace('editor', {
+    toolbar: 'Full',  // Full toolbar
+    extraPlugins: 'codesnippet',
+    codeSnippet_theme: 'monokai_sublime',
+    height: 400
+  });
+</script>
+
+          
+</body>
+</html>

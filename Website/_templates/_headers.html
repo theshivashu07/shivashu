@@ -1,0 +1,456 @@
+<!-- <header class="navbar navbar-expand-lg navbar-sticky sticky-top px-0 prime-bg" data-sticky-element="" style="background-color: #f8f8f8;display: block;"> -->
+<header
+  class="navbar navbar-expand-lg navbar-sticky sticky-top px-0 prime-bg py-3"
+  data-sticky-element=""
+  style="background-color: #f8f8f8; display: block"
+>
+  <div class="container">
+    <!-- Mobile offcanvas menu toggler (Hamburger) -->
+    <button
+      type="button"
+      class="navbar-toggler me-3 me-lg-0"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-label="Toggle navigation"
+    >
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <!-- <i class="bi bi-list-ul"></i> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="45"
+        height="45"
+        fill="white"
+        class="bi bi-list-ul"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+        />
+      </svg>
+    </button>
+
+    <!-- Navbar brand (Logo) -->
+    <a
+      class="navbar-brand py-1 py-md-2 py-xl-1 me-sm-n4 me-md-n5 me-lg-0"
+      href="/"
+      style="font-family: 'Croissant One'; font-size: xx-large; color:white !important;" 
+    >
+      <!-- 
+                                                            <span class="d-none d-sm-flex flex-shrink-0 text-primary rtl-flip me-2">
+                                                            </span> 
+                                                      -->
+      shivashu.
+    </a>
+
+    <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+    <nav
+      class="offcanvas offcanvas-start"
+      id="navbarNav"
+      tabindex="-1"
+      aria-labelledby="navbarNavLabel"
+    >
+      <div class="offcanvas-body pt-2 pb-4 py-lg-0 mx-lg-auto">
+        <ul class="navbar-nav position-relative">
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/docs/">Docs</a>
+          </li>
+          <!-- <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/tutorials/">Tutorials</a>
+          </li> -->
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/resume/">Resume</a>
+          </li>
+          <!-- <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/courses/">Courses</a>
+          </li> -->
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/connect/">Connect</a>
+          </li>
+          <!-- 
+          <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+            <a class="nav-link" href="/asks/">Asks</a>
+            <a class="nav-link" href="/faqs/">FAQs</a>
+          </li> 
+          -->
+
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              >Services</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/tutorials/">Tutorials</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/blogs/">Blogs</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/courses/">Courses</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/careers/">Careers</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-trigger="hover"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              >Explore</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/about/"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="/contact/"
+                  >Contact</a
+                >
+              </li>
+              <!-- <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Blog</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/geo-political-blogs/"
+                      >Geo Political blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/political-blogs/"
+                      >Political blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/youtube-blogs/"
+                      >Youtube blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/fitness-blogs/"
+                      >Fitness blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/tutorials-blogs/"
+                      >Tutorials blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/personalize-blogs/"
+                      >Personalize blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/entertainment-blogs/"
+                      >Entertainment blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/explore-more/"
+                      style="color: gray !important"
+                      >Explore more ...</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+              <li class="dropend">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-trigger="hover"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/error/404/"
+                      >404 Error</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/error/server/"
+                      >Server Error</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/error/under-maintenance/"
+                      >Under Maintenance</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/help/"
+                  >Help Center</a
+                >
+              </li>
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">404 Error</a></li> -->
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">Server Error</a></li> -->
+              <!-- <li><a class="dropdown-item" href="terms-and-conditions.html">Under Maintenance</a></li> -->
+              <li>
+                <a class="dropdown-item" href="/terms-and-conditions/"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Button group -->
+    <div class="d-flex gap-3">
+      <!-- Theme switcher (light/dark/auto) -->
+      <div class="dropdown" style="align-content: center">
+        <button
+          type="button"
+          class="theme-switcher btn btn-icon btn-secondary bg-transparent fs-lg border-0 rounded-circle animate-scale"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          aria-label="Toggle theme (light)"
+        >
+          <span
+            class="theme-icon-active d-flex animate-target position-relative z-1"
+          >
+            <!-- <i class="fi-sun"></i> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-sun-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul
+          class="dropdown-menu start-50 translate-middle-x"
+          style="--fn-dropdown-min-width: 9rem; --fn-dropdown-spacer: 0.5rem"
+        >
+          <li>
+            <button
+              type="button"
+              class="dropdown-item active"
+              data-bs-theme-value="light"
+              aria-pressed="true"
+              style="display: flex; align-items: center"
+            >
+              <!-- <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false" style="display: flex; align-items: center;"> -->
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-sun"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-sun-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Light</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item"
+              data-bs-theme-value="dark"
+              aria-pressed="false"
+              style="display: flex; align-items: center"
+            >
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-moon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-moon-stars-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                  />
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Dark</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item"
+              data-bs-theme-value="auto"
+              aria-pressed="false"
+              style="display: flex; align-items: center"
+            >
+              <span class="theme-icon d-flex fs-base me-2">
+                <!-- <i class="fi-auto"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-circle-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"
+                  />
+                </svg>
+              </span>
+              <span class="theme-label">Auto</span>
+              <i class="item-active-indicator fi-check ms-auto"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- 
+      {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}!</p>
+        <a href="{% url 'logout_confirmations' %}">Logout</a>
+      {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'signup' %}">Signup</a>
+      {% endif %} 
+      -->
+
+      {% if user.is_authenticated %}
+      <!-- <a class="btn btn-primary btn-fame" href="/security/logout/confirmations/">LogOut</a> -->
+       {% include "header-after-login.html" %}
+      {% else %}
+      <a class="btn btn-primary btn-fame" href="/security/login/">LogIn</a>
+      <!-- <a class="btn btn-primary btn-fame" href="/security/signup/">SignUp</a> -->
+      <a class="btn btn-primary btn-fame" href="/security/register/">SignUp</a>
+      {% endif %}
+
+
+      <!-- <a class="btn btn-outline-light rounded" href="/login/">LogIn</a> -->
+
+      <!-- <a class="btn btn-outline-light rounded" href="/signup/">SignUp</a> -->
+
+      <!-- Buy button  -->
+      <!-- <a class="btn btn-primary animate-shake" href="#" target="_blank" rel="noreferrer">
+                                                        <i class="fa-solid fa-download"></i>
+                                                        Download Resume
+                                                      </a> -->
+    </div>
+  </div>
+
+  <style>
+    .nav-link {
+      color: #363636;
+    }
+    .nav-link:hover {
+      color: black;
+    }
+
+    .btn-check:focus + .btn-secondary,
+    .btn-secondary:focus {
+      color: #fff;
+      background-color: #5c636a;
+      border-color: #565e64;
+      box-shadow: none !important;
+    }
+
+    nav.offcanvas,
+    nav.offcanvas-start,
+    nav.show a {
+      color: black !important;
+    }
+
+    /* .navbar .dropdown .dropdown-toggle:after {
+    background-repeat: no-repeat !important;
+    background-size: .625rem .625rem !important;
+    border: none !important;
+    color: white !important;
+    content: "\e92e" !important;
+    float: right !important;
+    font-family: Feather !important;
+    font-size: 16px !important;
+    margin-left: .375rem !important;
+} */
+
+    .navbar .dropdown .dropdown-toggle:after {
+    /* color: white !important; */
+    color: currentColor;
+    /* content: "\e92e" !important; */
+    font-size: 16px !important;
+    /* margin-top: 7px !important; */
+}
+
+.dropdown-toggle::after {
+      box-sizing: border-box !important;
+    display: inline-block !important;
+    margin-left: .255em !important;
+    vertical-align: .255em !important;
+    content: "" !important;
+    /* content: "\e92e" !important; */
+    border-top: .3em solid !important;
+    border-right: .3em solid transparent !important;
+    border-bottom: 0 !important;
+    border-left: .3em solid transparent !important;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    /* content: "\e92e" !important; */
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+
+  </style>
+</header>

@@ -1,0 +1,82 @@
+{% extends "_master.html" %}
+
+{% block title %}
+Default User
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+                        
+          {% include "_headers.html" %}
+
+          <main>
+
+          {% include "scrollbar.html" %}
+          
+          {% include "_header_path.html" %}
+
+          
+            
+
+          
+            <div class="container" style="padding: 100px;">
+
+              <table class="table table-sm table-hover" style="color: white; color: dimgray;">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row">3 rows</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tfoot>
+</table>
+
+            </div>
+
+
+
+
+
+
+          </main>
+
+
+          {% include "_footers.html" %}
+                                            
+{% endblock %}
+
+{% block script %}
+{% endblock %}
